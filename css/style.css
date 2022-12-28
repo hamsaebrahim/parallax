@@ -1,0 +1,133 @@
+
+@font-face {
+    font-family: 'Poppins' , sans-serif;
+    src: url("Poppins-Bold.ttf") format("truetype");
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none !important;
+    font-family: 'Poppins' , sans-serif;
+    scroll-behavior: smooth;
+}
+:root{
+    --neon-text-color: #530097;
+}
+
+body{
+    min-height: 100vh;
+    overflow-x: hidden;
+    background: linear-gradient(#2b1055 , #7597de);
+    color: #fff;
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    z-index: 100;
+}
+header >a{
+    color: #fff;
+    float: 800;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+header ul{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li{
+    margin-left: 20px;
+}
+
+header ul li a{
+    padding: 6px 10px;
+    color: #fff;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+header ul li a:hover,
+header ul li a:active {
+    background-color: #fff;
+    color: #2b1055;
+}
+
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    align-items: center ;
+    justify-content: center;
+
+}
+section::before{
+    content: "";
+    position: absolute;
+     bottom: -25%;
+     height: 50px;
+    width: 100vw;
+    z-index: 1000;
+    background: linear-gradient(to top,#2b1055 ,transparent);
+}
+section img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#moon{
+    mix-blend-mode: screen;
+}
+#text{
+   color: #fff;
+   position: absolute;
+   white-space: nowrap;
+   font-size: 5vw;
+   z-index: 9;
+  
+   text-shadow:   -0.2rem -0.2rem 1rem #fff,   0.2rem 0.2rem 1rem #fff,   0 0 2rem var(--neon-text-color),   0 0 4rem var(--neon-text-color),   0 0 6rem var(--neon-text-color),   0 0 8rem var(--neon-text-color),   0 0 10rem var(--neon-text-color);
+}
+#mfront{
+    object-fit: contain;
+    top: 50%;
+z-index: 10;
+}
+#btn{
+    padding: 8px 30px;
+    border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+    background-color: #fff;
+    color: #2b1055;
+    font-size: 1.5em;
+    z-index: 9;
+    transform: translatey(100px);
+}
+.sec{
+    padding: 200px;
+    padding-bottom: 50px;
+    text-align: right; 
+    position: relative;
+    background-color: rgb(0,5,25);
+}
